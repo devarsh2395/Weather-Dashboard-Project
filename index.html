@@ -16,38 +16,47 @@
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
+    
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Weather Dashboard</title>
   </head>
   <body>
 
 
-    <div class="container mt-5">
-      <h1>Weather Dashboard</h1>
+
+    <div class="container">
+      <h1 class="text-center">Weather Dashboard</h1>
       <form>
         <div class="form-group">
-          <label for="citySearch">City:</label>
-          <input type="text" class="form-control" id="citySearch">
+          <label for="city-input">Enter city:</label>
+          <input type="text" class="form-control" id="city-input">
         </div>
-        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="submit" class="btn btn-primary" id="search-btn">Search</button>
       </form>
+      <br>
       <h2>Current Weather</h2>
-      <div id="currentWeather">
-        <p id="cityName"></p>
-        <p id="currentDate"></p>
-        <img id="weatherIcon">
-        <p id="temperature"></p>
-        <p id="humidity"></p>
-        <p id="windSpeed"></p>
+      <div id="current-weather">
+        <p><strong>City:</strong> <span id="city-name"></span></p>
+        <p><strong>Date:</strong> <span id="date"></span></p>
+        <p><strong>Weather:</strong> <span id="icon"></span></p>
+        <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+        <p><strong>Humidity:</strong> <span id="humidity"></span></p>
+        <p><strong>Wind Speed:</strong> <span id="wind-speed"></span></p>
       </div>
+      <br>
       <h2>5-Day Forecast</h2>
-      <div class="row" id="forecast">
-        <!-- Forecast cards will be added here dynamically -->
+      <div id="forecast">
+        <div class="forecast-item">
+          <p><strong>Date:</strong> <span class="forecast-date"></span></p>
+          <p><strong>Weather:</strong> <span class="forecast-icon"></span></p>
+          <p><strong>Temperature:</strong> <span class="forecast-temperature"></span></p>
+          <p><strong>Humidity:</strong> <span class="forecast-humidity"></span></p>
+          <p><strong>Wind Speed:</strong> <span class="forecast-wind-speed"></span></p>
+        </div>
       </div>
+      <br>
       <h2>Search History</h2>
-      <ul id="searchHistory">
-        <!-- Search history items will be added here dynamically -->
+      <ul id="search-history">
       </ul>
     </div>
 
