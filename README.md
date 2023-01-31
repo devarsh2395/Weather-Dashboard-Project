@@ -2,9 +2,11 @@
 
 
 ## Description
+
+The project is created by using the openweather API. Planning ahead is easier with the 5-day forecast which gives you an insight into the weather for the next five days. Get the information including the city name, date, weather icon, temperature, humidity, and wind speed for the current conditions. And with the search history feature, you can quickly access past searches and view the current and future weather conditions for those cities.
  
 
-[Home webpage img]()
+[Home webpage img](./assets/Images/home-webpage-img.png)
 
 ## Deployed Webpage Url
 
@@ -32,6 +34,15 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
+
+## Technologies Used
+
+- HTML
+- CSS
+- JAVASCRIPT
+- BOOTSTRAP
+- JQUERY
+- GOOGLE FONTS
 
 ## Credits
 

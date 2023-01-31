@@ -1,5 +1,17 @@
 * {
     font-family: 'Roboto Slab', serif;
-    background-color: #DDDDDD;
+    background-color: #86E5FF;
+    line-height: 1.5;
 }
 
+.text-center {
+    padding-top: 50px;
+}
+
+.history {
+    font-size: 40px;
+}
+
+#search-history {
+    font-size: 25px;
+}
