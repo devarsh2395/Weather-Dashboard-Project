@@ -65,27 +65,11 @@ $(document).ready(function() {
       });
 
 
-    //   Search History
+      //   Search History
       var searchHistory = $("#search-history");
       var searchHistoryItem = $("<li class='list-group-item'>").text(city);
       searchHistory.append(searchHistoryItem);
       searchHistoryItem.on("click", function() {
-        var city = $(this).text();
-        var APIKey = "6f50c83a9c293a67c1efbbd19b59b09e";
-        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
-        $.ajax({
-          url: queryURL,
-          method: "GET"
-        }).then(function(response) {
-          var iconCode = response.weather[0].icon;
-          var iconURL = "https://openweathermap.org/img/w/" + iconCode + ".png";
-          $("#city-name").text(response.name);
-          $("#date").text(new Date().toLocaleDateString());
-          $("#icon").html("<img src='" + iconURL + "'>");
-          $("#temperature").text((response.main.temp - 273.15).toFixed(2) + "°C");
-          $("#humidity").text(response.main.humidity + "%");
-          $("#wind-speed").text(response.wind.speed + "m/s");
-        });
 
       });
     });
